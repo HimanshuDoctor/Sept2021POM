@@ -28,7 +28,7 @@ public class LoginPage {
 	private By ForgotPwdLink = By.linkText("Forgotten Password");
 	
 	//4. Page Actions:
-	
+	@Step("getting login page title value... ")
 	public String getLoginPagetitle() {
 //		return driver.getTitle();
 		return eleUtil.doGetTitle(Constants.LOGIN_PAGE_TITLE, Constants.DEFAULT_TIME_OUT);
